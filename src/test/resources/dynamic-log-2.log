@@ -1,0 +1,7 @@
+[Thread-1] 29 Apr 2014 12:31:18,647  ERROR DynamicServiceManager - Scheduling DynamicServiceManager at interval of 30 seconds
+[Thread-1] 29 Apr 2014 12:31:18,647  ERROR LifeCycleManager - Started service [DynamicServiceManager]
+[Thread-1] 29 Apr 2014 12:31:18,647  ERROR LifeCycleManager - Starting service [JMXService]
+[Thread-1] 29 Apr 2014 12:31:18,660  ERROR JMXService - ###### Using config from controller for JMX operations #########
+[Thread-1] 29 Apr 2014 12:31:18,665  ERROR ServerMBeanManagerVersion2 - Initialized MBean Finder with delay=120 secs
+[Thread-1] 29 Apr 2014 12:31:18,679  ERROR MemoryMetricGenerator - Identified minor collection bean :ParNew
+[Thread-1] 29 Apr 2014 12:31:18,680  ERROR MemoryMetricGenerator - Identified major collection bean :ConcurrentMarkSweep

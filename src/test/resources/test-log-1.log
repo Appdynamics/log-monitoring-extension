@@ -1,0 +1,44 @@
+[Thread-1] 29 Apr 2014 12:31:18,647  INFO DynamicServiceManager - Scheduling DynamicServiceManager at interval of 30 seconds
+[Thread-1] 29 Apr 2014 12:31:18,647  DEBUG LifeCycleManager - Started service [DynamicServiceManager]
+[Thread-1] 29 Apr 2014 12:31:18,647  INFO LifeCycleManager - Starting service [JMXService]
+[Thread-1] 29 Apr 2014 12:31:18,660  DEBUG JMXService - ###### Using config from controller for JMX operations #########
+[Thread-1] 29 Apr 2014 12:31:18,665  INFO ServerMBeanManagerVersion2 - Initialized MBean Finder with delay=120 secs
+[Thread-1] 29 Apr 2014 12:31:18,679  DEBUG MemoryMetricGenerator - Identified minor collection bean :ParNew
+[Thread-1] 29 Apr 2014 12:31:18,680  INFO MemoryMetricGenerator - Identified major collection bean :ConcurrentMarkSweep
+[Thread-1] 29 Apr 2014 12:31:18,680  DEBUG MemoryMetricGenerator - Initialized Minor Collection GC metrics
+[Thread-1] 29 Apr 2014 12:31:18,680  INFO MemoryMetricGenerator - Initialized Major Collection GC metrics
+[Thread-1] 29 Apr 2014 12:31:18,680  DEBUG MemoryMetricGenerator - Initialized Ovearll GC metrics
+[Thread-1] 29 Apr 2014 12:31:18,682  INFO MemoryMetricGenerator - Initialized Perm Gen Memory Tracker with Pool Bean [CMS Perm Gen]
+[Thread-1] 29 Apr 2014 12:31:18,682  DEBUG MemoryMetricGenerator - Initialized Memory Pool MX Beans [Code Cache, Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+[Thread-1] 29 Apr 2014 12:31:18,684  INFO JVMMetricReporter - Number of processors 8
+[Thread-1] 29 Apr 2014 12:31:18,684  INFO JMXService - JVM JMX Metric collection initialized with update interval [60] seconds
+[Thread-1] 29 Apr 2014 12:31:18,686  INFO LifeCycleManager - Started service [JMXService]
+[Thread-1] 29 Apr 2014 12:31:18,686  INFO LifeCycleManager - Starting service [Agent16Service]
+[Thread-1] 29 Apr 2014 12:31:18,691  INFO LifeCycleManager - Started service [Agent16Service]
+[Thread-1] 29 Apr 2014 12:31:18,691  INFO LifeCycleManager - Starting service [BCIEngine]
+[Thread-1] 29 Apr 2014 12:31:18,743  DEBUG ClassMemoryLimitTracker - Class Memory limit check before retransform  is enabled
+[Thread-1] 29 Apr 2014 12:31:18,744  INFO Java16AgentService - Class retransformation supported in current JVM version
+[Thread-1] 29 Apr 2014 12:31:18,752  INFO InstrumentationHandler - Registered class file transformer for re-transformation
+[Thread-1] 29 Apr 2014 12:31:18,757  DEBUG BCIEngineService - BCI Early Rule Appliers are bypassed because retransformation is supported
+[Thread-1] 29 Apr 2014 12:31:18,757  DEBUG LifeCycleManager - Started service [BCIEngine]
+[Thread-1] 29 Apr 2014 12:31:18,757  DEBUG LifeCycleManager - Starting service [AgentDiagnosticsService]
+[Thread-1] 29 Apr 2014 12:31:18,786  DEBUG AgentDiagnosticConfig - Setting Memory Monitor Enabled false
+[Thread-1] 29 Apr 2014 12:31:18,786  DEBUG AgentDiagnosticConfig - Memory Monitor max stack depth set to 500000
+[Thread-1] 29 Apr 2014 12:31:18,786  DEBUG AgentDiagnosticConfig - Memory Monitor total objects set to 500000
+[Thread-1] 29 Apr 2014 12:31:18,787  INFO MemoryMonitor - Updated monitor class names []. Removed all tracked method objects.
+[Thread-1] 29 Apr 2014 12:31:18,866  INFO ObjectMonitoringService - ObjectMonitoringService property enable-object-size-monitoring changed to false
+[Thread-1] 29 Apr 2014 12:31:18,875  ERROR ObjectMonitoringService - ObjectMonitoringService property minimum-size-for-evaluation-in-mb changed to 5
+[Thread-1] 29 Apr 2014 12:31:18,875  INFO LifeCycleManager - Started service [ObjectMonitoringService]
+[Thread-1] 29 Apr 2014 12:31:18,875  INFO LifeCycleManager - Starting service [SnapshotService]
+[Thread-1] 29 Apr 2014 12:31:18,912  INFO SnapshotBuffer - Hotspot snapshot buffer config: Config{numOfLargeBuckets=30, largeBucketSize=3, numOfSmallBuckets=170, smallBucketSize=1, maxBuckets=200, totalSlots=260}
+[Thread-1] 29 Apr 2014 12:31:18,916  INFO CallGraphConfigHandler - Call Graph Config Changed  callgraph-granularity-in-ms  Value -null
+[Thread-1] 29 Apr 2014 12:31:18,916  ERROR CallGraphConfigHandler - Call Graph Config Changed  show-packages  Value -null
+[Thread-1] 29 Apr 2014 12:31:18,916  INFO CallGraphFilteringConfig - Setting Callgraph package LOCAL always show [] 
+[Thread-1] 29 Apr 2014 12:31:18,916  ERROR CallGraphConfigHandler - Call Graph Config Changed  dont-show-packages  Value -null
+[Thread-1] 29 Apr 2014 12:31:18,916  INFO CallGraphFilteringConfig - Setting Callgraph package LOCAL excludes [] 
+[Thread-1] 29 Apr 2014 12:31:18,917  ERROR CallGraphConfigHandler - Call Graph Config Changed  hotspot-granularity-in-ms  Value -null
+[Thread-1] 29 Apr 2014 12:31:18,919  INFO RequestSegmentDataReporter - Request Segment Data reporter setup to report at interval [10000]
+[Thread-1] 29 Apr 2014 12:31:18,922  ERROR ApplicationStartupPolicy - Startup policy false
+[Thread-1] 29 Apr 2014 12:31:18,940  INFO LifeCycleManager - Started service [SnapshotService]
+[Thread-1] 29 Apr 2014 12:31:18,940  ERROR LifeCycleManager - Starting service [TransactionMonitoringService]
+[Thread-1] 29 Apr 2014 12:31:19,082  ERROR SlowAndStallRequestMonitor - Stall Request checker setup 

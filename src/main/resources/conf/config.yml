@@ -1,0 +1,89 @@
+# Metric prefix to show metrics in one tier (HIGHLY RECOMMENDED)
+# Please follow the Metric Path section of https://docs.appdynamics.com/display/PRO42/Build+a+Monitoring+Extension+Using+Java for instructions on retrieving the tier ID
+#metricPrefix: "Server|Component:<TIER_ID>|Log Monitor|"
+
+#Metric Prefix when SIM is enabled"
+metricPrefix: "Custom Metrics|Log Monitor|"
+
+logs:
+- displayName: ""
+  logDirectory: ""
+  logName: ""
+  encoding: ""      #Not mandatory. Supported types: UTF8, UTF16, UTF16-LE, UTF16-BE, UTF32, UTF-32LE, UTF32-BE
+  searchStrings:
+  #displayName Should be unique across the various patterns.
+  - displayName: ""
+    pattern: ""
+    matchExactString: false
+    caseSensitive: false
+    printMatchedString: false
+
+#Replaces characters in metric name with the specified characters.
+# "replace" takes any regular expression
+# "replaceWith" takes the string to replace the matched characters
+metricPathReplacements:
+- replace: ":"
+  replaceWith: ";"
+- replace: "|"
+  replaceWith: "="
+- replace: ","
+  replaceWith: "#"
+
+#metricCharacterReplacer:
+#  - replace: ":"
+#    replaceWith: ";"
+#  - replace: "\\|"
+#    replaceWith: "#"
+#  - replace: "\\,"
+#    replaceWith: "#"
+
+# Number of concurrent threads
+numberOfThreads: 20
+
+#Thread timeout in seconds
+threadTimeOut: 60
+
+sendDataToEventsService: false
+
+# This adds the specified number of lines after the line in which a log match is found to the event body
+# while sending data to the events service
+logMatchOffset: 0
+
+# This field contains the various parameters required to initiate a connection and send data to the AppDynamics Events Service.
+eventsServiceParameters:
+  host: ""
+  port:
+  globalAccountName: ""
+  eventsApiKey: ""
+  useSSL: false
+
+# The sections [customDashboard] and [controllerInfo] need to be enabled for uploading dashboard to the controller UI
+customDashboard:
+  enabled: false
+  dashboardName: "Log Monitor Dashboard"
+  sslCertCheckEnabled: false
+  # Update the path to the dashboard file.
+  pathToSIMDashboard: "monitors/LogMonitor/SIMDashboard.json"
+  pathToNormalDashboard: "monitors/LogMonitor/APMDashboard.json"
+  periodicDashboardCheckInSeconds: 300
+
+# If any of the following fields are not set, the values of the specific fields are set from the system properties of the corresponding fields as specified in the comments.
+# If the system properties are not set for the field, then the data is retrieved from machine agent configFile. Please refer to ControllerInfoFactory for more details.
+controllerInfo:
+  controllerHost: "" # -Dappdynamics.controller.hostName
+  controllerPort: 8090 # -Dappdynamics.controller.port
+  controllerSslEnabled: false # -Dappdynamics.controller.ssl.enabled
+  enableOrchestration: false # N/A
+  uniqueHostId: "" # -Dappdynamics.agent.uniqueHostId
+  username: "" # -Dappdynamics.agent.monitors.controller.username
+  password: "" # -Dappdynamics.agent.monitors.controller.password
+  encryptedPassword: "" # -Dappdynamics.agent.monitors.controller.encryptedPassword
+  accountAccessKey: "" # -Dappdynamics.agent.accountAccessKey
+  account: "" # -Dappdynamics.agent.accountName
+  machinePath: "" # -Dappdynamics.machine.agent.hierarchyPath
+  simEnabled: false # -Dappdynamics.sim.enabled
+  applicationName: "" # -Dappdynamics.agent.applicationName
+  tierName: "" # -Dappdynamics.agent.tierName
+  nodeName: "" # -Dappdynamics.agent.nodeName
+
+encryptionKey: "abcd"

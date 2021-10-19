@@ -1,0 +1,18 @@
+[Thread-1] 29 Apr 2014 12:31:18,647  INFO DynamicServiceManager - Scheduling DynamicServiceManager at interval of 30 seconds
+[Thread-1] 29 Apr 2014 12:31:18,647  DEBUG LifeCycleManager - Started service [DynamicServiceManager]
+[Thread-1] 29 Apr 2014 12:31:18,647  INFO LifeCycleManager - Starting service [JMXService]
+[Thread-1] 29 Apr 2014 12:31:18,660  DEBUG JMXService - ###### Using config from controller for JMX operations #########
+[Thread-1] 29 Apr 2014 12:31:18,665  INFO ServerMBeanManagerVersion2 - Initialized MBean Finder with delay=120 secs
+[Thread-1] 29 Apr 2014 12:31:18,679  DEBUG MemoryMetricGenerator - Identified minor collection bean :ParNew
+[Thread-1] 29 Apr 2014 12:31:18,680  INFO MemoryMetricGenerator - Identified major collection bean :ConcurrentMarkSweep
+[Thread-1] 29 Apr 2014 12:31:18,680  DEBUG MemoryMetricGenerator - Initialized Minor Collection GC metrics
+[Thread-1] 29 Apr 2014 12:31:18,680  INFO MemoryMetricGenerator - Initialized Major Collection GC metrics
+[Thread-1] 29 Apr 2014 12:31:18,680  DEBUG MemoryMetricGenerator - Initialized Ovearll GC metrics
+[Thread-1] 29 Apr 2014 12:31:18,682  INFO MemoryMetricGenerator - Initialized Perm Gen Memory Tracker with Pool Bean [CMS Perm Gen]
+[Thread-1] 29 Apr 2014 12:31:18,682  DEBUG MemoryMetricGenerator - Initialized Memory Pool MX Beans [Code Cache, Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+[Thread-1] 29 Apr 2014 12:31:18,684  INFO JVMMetricReporter - Number of processors 8
+[Thread-1] 29 Apr 2014 12:31:18,684  INFO JMXService - JVM JMX Metric collection initialized with update interval [60] seconds
+[Thread-1] 29 Apr 2014 12:31:18,684  INFO ******test******
+[Thread-1] 29 Apr 2014 12:31:18,684  INFO wow this is **404** !!
+[Thread-1] 29 Apr 2014 12:31:18,684  INFO <this> is <this> is enclosed.
+[Thread-1] 29 Apr 2014 12:31:18,684  INFO <again> is <again> is enclosed and <again> >.

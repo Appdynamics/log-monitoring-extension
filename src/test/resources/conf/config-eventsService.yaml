@@ -1,0 +1,36 @@
+logs:
+  - displayName: "Test Log Events Service"
+    logDirectory: "src/test/resources"
+    logName: "test-log-1.log"
+    searchStrings:
+       - displayName: "Debug"
+         pattern: "debug"
+         matchExactString: true
+         caseSensitive: false
+         printMatchedString: false
+
+metricPathReplacements:
+  - replace: ","
+    replaceWith: " "
+# Number of concurrent threads
+numberOfThreads: 10
+
+threadTimeOut: 60
+
+#prefix used to show up metrics in AppDynamics 
+metricPrefix: "Custom Metrics|LogMonitor|"
+
+
+sendDataToEventsService: true
+
+logMatchOffset: 5
+
+# This field contains the various parameters required to initiate a connection and send data to the AppDynamics Events Service.
+eventsServiceParameters:
+  host: "XYZ"
+  port: 9080
+  globalAccountName: "someAccount"
+  eventsApiKey: "abc"
+  useSSL: false
+
+

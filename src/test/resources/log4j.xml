@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~  Copyright 2014. AppDynamics LLC and its affiliates.
+  ~  All Rights Reserved.
+  ~  This is unpublished proprietary source code of AppDynamics LLC and its affiliates.
+  ~  The copyright notice above does not evidence any actual or intended publication of such source code.
+  ~
+  -->
+
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+
+<log4j:configuration>
+	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{ABSOLUTE}|%p|%C|%m%n" />
+		</layout>
+	</appender>
+
+	<root>
+		<priority value="debug"></priority>
+		<appender-ref ref="stdout" />
+	</root>
+
+</log4j:configuration>

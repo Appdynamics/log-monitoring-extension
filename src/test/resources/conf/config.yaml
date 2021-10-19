@@ -1,0 +1,88 @@
+logs:
+  - displayName: "TestLog"
+    logDirectory: "src/test/resources"
+    logName: "test-log-regex.log"
+    searchStrings:
+       - displayName: "Words with m"
+         pattern: "(\\s|^)m\\w+(\\s|$)"
+         matchExactString: false
+         caseSensitive: false
+         printMatchedString: false
+
+       - displayName: "Words with <"
+         pattern: "<\\w*>"
+         matchExactString: false
+         caseSensitive: false
+         printMatchedString: false
+
+       - displayName: "Words with [jmx"
+         pattern: "\\[JMX.*\\]"
+         matchExactString: false
+         caseSensitive: false
+         printMatchedString: false
+
+       - displayName: "Debug"
+         pattern: "debug"
+         matchExactString: false
+         caseSensitive: false
+         printMatchedString: false
+
+       - displayName: "Info"
+         pattern: "info"
+         matchExactString: false
+         caseSensitive: false
+         printMatchedString: false
+
+       - displayName: "Error"
+         pattern: "error"
+         matchExactString: false
+         caseSensitive: false
+         printMatchedString: false
+
+
+  - displayName: ""
+    logDirectory: "src/test/resources"
+    logName: "test-log-1.log"
+    searchStrings:
+       - displayName: "Debug"
+         pattern: "debug"
+         matchExactString: true
+         caseSensitive: false
+         printMatchedString: false
+
+       - displayName: "Info"
+         pattern: "info"
+         matchExactString: true
+         caseSensitive: false
+         printMatchedString: false
+
+       - displayName: "Error"
+         pattern: "error"
+         matchExactString: true
+         caseSensitive: false
+         printMatchedString: false
+
+metricPathReplacements:
+  - replace: ","
+    replaceWith: " "
+# Number of concurrent threads
+numberOfThreads: 10
+
+threadTimeOut: 60
+
+#prefix used to show up metrics in AppDynamics 
+metricPrefix: "Custom Metrics|LogMonitor|"
+
+
+sendDataToEventsService: false
+
+logMatchOffset: 0
+
+# This field contains the various parameters required to initiate a connection and send data to the AppDynamics Events Service.
+eventsServiceParameters:
+  host: ""
+  port:
+  globalAccountName: ""
+  eventsApiKey: ""
+  useSSL: false
+

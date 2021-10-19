@@ -1,0 +1,9 @@
+{
+  "schema":
+  {
+    "logDisplayName":"string",
+    "searchPattern":"string",
+    "searchPatternDisplayName":"string",
+    "logMatch":"string"
+  }
+}
